@@ -1,0 +1,165 @@
+/*
+*
+*   Global CSS
+*
+*/
+body {
+    font-family: 'Open-sans', sans-serif; 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+form {
+    margin: 0;
+}  
+/*
+*
+*   Modal
+*
+*/   
+#buyModal {
+    text-align: center;
+
+    .modal-dialog {
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+        max-width: 720px;
+        margin-top: 35px;
+        margin-bottom: 0px;
+        // @media(max-width: 800px) {
+        //     max-width: 700px;
+        // }
+        // @media(max-width: 695px) {
+        //     max-width: 100%;
+        //     margin: 0;
+
+        //     .modal-content {
+        //         margin: 10px;
+        //     }
+        //     .modal-header {
+        //         padding: 20px 15px !important;
+        //     }
+        //     .modal-body {
+        //         padding: 15px 17px !important;
+        //     }
+        //     h4#buyModalLabel {
+        //         font-size: 1.4em !important;
+        //     }
+        //     .close-modal {
+        //         top: 5px;
+        //         right: 5px;
+        //         width: 30px;
+        //         height: 30px;
+        //         box-shadow: 0px 0px transparent !important;
+        //     }
+        //     .btn-modal-confirm {
+        //         white-space: pre-line;
+        //         word-break: break-word;
+        //         font-size: 1.5em;
+        //     }
+        // }
+        // @media(max-width: 695px) { 
+        //     .btn-modal-confirm {
+        //         padding: 15px;                
+        //         font-size: 1.4em;
+        //     }
+        // }
+    }
+    .modal-content {
+        border: 0;
+        border-radius: 2px;
+        box-shadow: 0 16px 28px 0 rgba(0,0,0,0.15),0 25px 55px 0 rgba(0,0,0,0.10);
+
+        .modal-header {
+            padding: 30px 40px;
+        }
+        .modal-body {
+            padding: 25px 40px;
+        }
+        .form-group {
+            margin-bottom: 1.2em;
+            .form-control {
+                padding-right: 35px;
+            }
+            .fv-control-feedback {
+                top: 25px;
+            }
+        }
+        .has-warning #email ~ [data-fv-validator="emailAddress"] {  
+            display: none !important;
+        } 
+    } 
+    label { 
+        font-weight: 700;
+        margin-bottom: 2px;
+    }
+    h4#buyModalLabel {
+        font-family: 'Lato', sans-serif;
+        font-size: 1.75em;
+        text-align: center;
+        strong {
+            font-weight: 900;
+        }
+    }
+    .text-muted {
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+
+}
+.close-modal { 
+    background-color: #FFF !important;
+    position: absolute;
+    border-radius: 100%; 
+    top: -20px;
+    right: -20px;
+    padding: 5px !important;
+    width: 40px;
+    height: 40px;  
+    box-shadow: 0px 2px 5px rgba(0,0,0, .10), 0px 2px 3px rgba(0,0,0, .15); 
+    opacity: 1 !important;
+    transition: all .25s ease;
+    line-height: 0;
+
+    &:hover {
+        opacity: 1;
+        box-shadow: 0px 2px 15px rgba(0,0,0, .10), 0px 2px 10px rgba(0,0,0, .15);  
+        svg {
+            fill: #F44336;
+        }
+    } 
+    &:focus, &:active {
+        outline: none!important;
+    }
+    svg{ 
+        fill: #919191; 
+    } 
+
+}
+
+// button
+.btn-modal-confirm { 
+    font-family: 'Lato', sans-serif;
+    background: #F44336;
+    box-shadow: inset 0px 32px 59px -18px rgba(255,255,255,0.59),inset 1px 1px 4px rgba(255, 255, 255, 0.54);
+    padding: 20px 30px;
+    border-color: #F44336;
+    font-size: 1.7em; 
+    transition: all .25s ease;
+    &:hover, &:focus, &:active {
+        background: #E53935; 
+        border-color: #E53935;
+        box-shadow: inset 0px 32px 59px -18px rgba(255, 255, 255, 0.59), inset 1px 1px 4px rgba(255, 255, 255, 0.55);
+        outline: none !important;
+    } 
+    &:active:hover, &:active:focus {
+        color: #fff;
+        background-color: #E53935;
+        border-color: #E53935;
+        box-shadow: inset 0px 20px 65px -23px rgba(0, 0, 0, 0.84), inset 1px 1px 4px rgba(255, 255, 255, 0.55);
+        outline: none !important;
+    }
+}
+.modal-backdrop.in {
+  opacity: 0.3;
+}
