@@ -129,7 +129,4 @@ form {
     box-shadow: inset 0px 20px 65px -23px rgba(0, 0, 0, 0.64), inset 1px 1px 4px rgba(232, 55, 55, 0.52);
     outline: none !important; }
 
-.modal-backdrop.in {
-  opacity: 0.25; }
-
 /*# sourceMappingURL=modal-form.css.map */
