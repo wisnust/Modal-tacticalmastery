@@ -26,44 +26,48 @@ form {
         max-width: 720px;
         margin-top: 35px;
         margin-bottom: 0px;
-        // @media(max-width: 800px) {
-        //     max-width: 700px;
-        // }
-        // @media(max-width: 695px) {
-        //     max-width: 100%;
-        //     margin: 0;
+        @media(max-width: 800px) {
+            max-width: 700px;
+        }
+        @media(max-width: 695px) {
+            max-width: 100%;
+            margin: 0;
 
-        //     .modal-content {
-        //         margin: 10px;
-        //     }
-        //     .modal-header {
-        //         padding: 20px 15px !important;
-        //     }
-        //     .modal-body {
-        //         padding: 15px 17px !important;
-        //     }
-        //     h4#buyModalLabel {
-        //         font-size: 1.4em !important;
-        //     }
-        //     .close-modal {
-        //         top: 5px;
-        //         right: 5px;
-        //         width: 30px;
-        //         height: 30px;
-        //         box-shadow: 0px 0px transparent !important;
-        //     }
-        //     .btn-modal-confirm {
-        //         white-space: pre-line;
-        //         word-break: break-word;
-        //         font-size: 1.5em;
-        //     }
-        // }
-        // @media(max-width: 695px) { 
-        //     .btn-modal-confirm {
-        //         padding: 15px;                
-        //         font-size: 1.4em;
-        //     }
-        // }
+            .modal-content {
+                margin: 10px;
+            }
+            .modal-header {
+                padding: 20px 15px !important;
+            }
+            .modal-body {
+                padding: 15px 17px !important;
+            }
+            h4#buyModalLabel {
+                font-size: 1.4em !important;
+            }
+            .close-modal {
+                box-shadow: 0px 0px transparent !important;
+                background: transparent !important;
+                top: 0px;
+                right: 5px;
+                width: 25px;
+                height: 25px;
+                svg {
+                    fill: #bdbdbd;
+                }
+            }
+            .btn-modal-confirm {
+                white-space: pre-line;
+                word-break: break-word;
+                font-size: 1.5em;
+            }
+        }
+        @media(max-width: 695px) { 
+            .btn-modal-confirm {
+                padding: 15px;                
+                font-size: 1.35em;
+            }
+        }
     }
     .modal-content {
         border: 0;
@@ -118,7 +122,7 @@ form {
     height: 40px;  
     box-shadow: 0px 2px 5px rgba(0,0,0, .10), 0px 2px 3px rgba(0,0,0, .15); 
     opacity: 1 !important;
-    transition: all .25s ease;
+    transition: all .15s ease;
     line-height: 0;
 
     &:hover {
@@ -145,7 +149,7 @@ form {
     padding: 20px 30px;
     border-color: #F44336;
     font-size: 1.7em; 
-    transition: all .25s ease;
+    transition: all .15s ease;
     &:hover, &:focus, &:active {
         background: #E53935; 
         border-color: #E53935;
@@ -153,13 +157,13 @@ form {
         outline: none !important;
     } 
     &:active:hover, &:active:focus {
-        color: #fff;
+        color: #FFEBEE;
         background-color: #E53935;
         border-color: #E53935;
-        box-shadow: inset 0px 20px 65px -23px rgba(0, 0, 0, 0.84), inset 1px 1px 4px rgba(255, 255, 255, 0.55);
+        box-shadow: inset 0px 20px 65px -23px rgba(0, 0, 0, 0.64), inset 1px 1px 4px rgba(232, 55, 55, 0.52);
         outline: none !important;
     }
 }
 .modal-backdrop.in {
-  opacity: 0.3;
+  opacity: 0.25;
 }
