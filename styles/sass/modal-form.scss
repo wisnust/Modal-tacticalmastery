@@ -136,7 +136,13 @@ form {
             float: right;
             width: 480px;
         }
-
+        .validMessage, .form-control-feedback {
+            margin-left: 100px;
+            float: right;
+        }
+        .form-group .fv-control-feedback {
+            top: 0px !important;
+        }
     } 
     // Iphone 5 Landscape
     @media only screen 
@@ -157,8 +163,24 @@ form {
         .modal-dialog h4#buyModalLabel {
             font-size: 1.2em !important;
         }
-        .form-control { 
+        .modal-header {
+            padding: 10px 15px !important;
+        }
+        label { 
+            margin-top: 5px;
+            float: left;
+        }
+        .form-control {
+            padding-right: 35px;
+            float: right;
             width: 315px;
+        } 
+        .validMessage, .form-control-feedback {
+            margin-left: 100px;
+            float: right;
+        }
+        .form-group .fv-control-feedback {
+            top: 0px !important;
         }
     }
  
