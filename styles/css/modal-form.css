@@ -92,7 +92,7 @@ form {
   #buyModal .text-muted {
     margin-top: 15px;
     margin-bottom: 0px; }
-  @media only screen and (max-device-width: 667px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     #buyModal .modal-header {
       padding: 10px 15px !important; }
     #buyModal label {
@@ -102,10 +102,10 @@ form {
       padding-right: 35px;
       float: right;
       width: 480px; } }
-  @media only screen and (max-device-width: 569px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     #buyModal .form-control {
       width: 400px; } }
-  @media only screen and (max-device-width: 485px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     #buyModal .modal-dialog h4#buyModalLabel {
       font-size: 1.2em !important; }
     #buyModal .form-control {

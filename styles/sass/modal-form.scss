@@ -118,9 +118,12 @@ form {
         margin-bottom: 0px;
     }
     
-    @media only screen  
-    and (max-device-width : 667px) 
-    and (orientation : landscape) { 
+    // iphone 6 landscape
+    @media only screen 
+      and (min-device-width: 375px) 
+      and (max-device-width: 667px) 
+      and (-webkit-min-device-pixel-ratio: 2)
+      and (orientation: landscape) { 
         .modal-header {
             padding: 10px 15px !important;
         }
@@ -133,19 +136,24 @@ form {
             float: right;
             width: 480px;
         }
-    }
 
-    @media only screen  
-    and (max-device-width : 569px) 
-    and (orientation : landscape) {  
+    } 
+    // Iphone 5 Landscape
+    @media only screen 
+      and (min-device-width: 320px) 
+      and (max-device-width: 568px)
+      and (-webkit-min-device-pixel-ratio: 2)
+      and (orientation: landscape) { 
         .form-control { 
             width: 400px;
         }
     }
-
-    @media only screen  
-    and (max-device-width : 485px) 
-    and (orientation : landscape) {  
+    // Iphone 4 Landscape
+    @media only screen 
+      and (min-device-width: 320px) 
+      and (max-device-width: 480px)
+      and (-webkit-min-device-pixel-ratio: 2)
+      and (orientation: landscape) { 
         .modal-dialog h4#buyModalLabel {
             font-size: 1.2em !important;
         }
@@ -153,6 +161,7 @@ form {
             width: 315px;
         }
     }
+ 
 
 }
 .close-modal { 
