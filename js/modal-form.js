@@ -129,7 +129,14 @@ $(document).ready(function() {
 
 jQuery(function ($) {
   $('input[name=phonenumber]').mask('000-000-0000', {'translation': {0: {pattern: /[0-9*-]/}}}); 
+
   $('#buyModal').on('shown.bs.modal', function(event) {
+    
+      window.scrollTo(0,1)
+      setTimeout(function(){
+        $('#name').focus();
+      },1000);
+   
       $('#name').focus()
   });
 });
