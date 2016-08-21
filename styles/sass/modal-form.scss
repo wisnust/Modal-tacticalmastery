@@ -42,7 +42,7 @@ form {
                 box-shadow: 0px 0px transparent !important;
             }
             .modal-header {
-                padding: 40px 15px !important;
+                padding: 20px 15px !important;
             }
             .modal-body {
                 padding: 15px 17px !important;
@@ -53,10 +53,10 @@ form {
             .close-modal {
                 box-shadow: 0px 0px transparent !important;
                 background: transparent !important;
-                top: 10px;
-                right: -10px;
-                width: 50px;
-                height: 40px;
+                top: 0;
+                right: 0;
+                width: 30px;
+                height: 30px;
                 svg {
                     fill: #bdbdbd;
                 }
@@ -67,16 +67,10 @@ form {
                 font-size: 1.5em;
             }
         }
-        @media(max-width: 370px) { 
-            .modal-header {
-                padding: 20px 15px !important;
-            }
-            .close-modal { 
-                top: 0;
-                right: 0;
-                width: 30px;
-                height: 30px;
-            }
+        @media(max-width: 370px) {  
+            h4#buyModalLabel {
+                font-size: 1.2em !important;
+            } 
             .btn-modal-confirm {
                 padding: 15px;                
                 font-size: 1.35em;
@@ -122,6 +116,42 @@ form {
     .text-muted {
         margin-top: 15px;
         margin-bottom: 0px;
+    }
+    
+    @media only screen  
+    and (max-device-width : 667px) 
+    and (orientation : landscape) { 
+        .modal-header {
+            padding: 10px 15px !important;
+        }
+        label { 
+            margin-top: 5px;
+            float: left;
+        }
+        .form-control {
+            padding-right: 35px;
+            float: right;
+            width: 480px;
+        }
+    }
+
+    @media only screen  
+    and (max-device-width : 569px) 
+    and (orientation : landscape) {  
+        .form-control { 
+            width: 400px;
+        }
+    }
+
+    @media only screen  
+    and (max-device-width : 485px) 
+    and (orientation : landscape) {  
+        .modal-dialog h4#buyModalLabel {
+            font-size: 1.2em !important;
+        }
+        .form-control { 
+            width: 315px;
+        }
     }
 
 }
