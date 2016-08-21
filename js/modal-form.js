@@ -67,7 +67,7 @@ $(document).ready(function() {
               //     message: 'The name can only consist of alphabetical'
               // }
             }
-          },
+          }, 
           // Email field
           email: {
             validMessage: 'We will email you a confirmation',
@@ -78,10 +78,10 @@ $(document).ready(function() {
               stringLength: {
                 min: 1,
                 max: 100,
-                message: 'The name must be less than 100 characters long. '
+                message: 'The email address must be more than 6 and less than 30 characters long. '
               },
               regexp: {
-                regexp: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/,
+                regexp: '^[^@\\s]+@([^@\\s]+\\.)+[^@\\s]+$',
                 message: 'The value is not a valid email address'
               }
             }
