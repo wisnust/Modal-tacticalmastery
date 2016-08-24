@@ -119,8 +119,7 @@ form {
     }
     
     // iphone 6 landscape
-    @media only screen 
-      and (min-device-width: 315px) 
+    @media (min-device-width: 315px) 
       and (max-device-width: 667px) 
       and (-webkit-min-device-pixel-ratio: 2)
       and (orientation: landscape) { 
@@ -145,8 +144,7 @@ form {
         }
     }  
     // Iphone 4 Landscape
-    @media only screen 
-      and (min-device-width: 315px) 
+    @media (min-device-width: 315px) 
       and (max-device-width: 480px)
       and (-webkit-min-device-pixel-ratio: 2)
       and (orientation: landscape) { 
@@ -186,7 +184,14 @@ form {
     } 
 
 }
+.btn-modal-open {
+    background: #ebe9f9; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ebe9f9 0%, #d8d0ef 41%, #d8d0ef 41%, #cec7ec 69%, #c1bfea 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ebe9f9 0%,#d8d0ef 41%,#d8d0ef 41%,#cec7ec 69%,#c1bfea 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ebe9f9 0%,#d8d0ef 41%,#d8d0ef 41%,#cec7ec 69%,#c1bfea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebe9f9', endColorstr='#c1bfea',GradientType=0 ); /* IE6-9 */
 
+}
 // button
 .btn-modal-confirm { 
     font-family: 'Lato', sans-serif;

@@ -92,7 +92,7 @@ form {
   #buyModal .text-muted {
     margin-top: 15px;
     margin-bottom: 0px; }
-  @media only screen and (min-device-width: 315px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  @media (min-device-width: 315px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     #buyModal .modal-header {
       padding: 10px 15px !important; }
     #buyModal label {
@@ -107,7 +107,7 @@ form {
       float: right; }
     #buyModal .form-group .fv-control-feedback {
       top: 0px !important; } }
-  @media only screen and (min-device-width: 315px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  @media (min-device-width: 315px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     #buyModal .modal-dialog h4#buyModalLabel {
       font-size: 1.2em !important; } }
 
@@ -133,6 +133,18 @@ form {
     outline: none !important; }
   .close-modal svg {
     fill: #919191; }
+
+.btn-modal-open {
+  background: #ebe9f9;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ebe9f9 0%, #d8d0ef 41%, #d8d0ef 41%, #cec7ec 69%, #c1bfea 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ebe9f9 0%, #d8d0ef 41%, #d8d0ef 41%, #cec7ec 69%, #c1bfea 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ebe9f9 0%, #d8d0ef 41%, #d8d0ef 41%, #cec7ec 69%, #c1bfea 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebe9f9', endColorstr='#c1bfea',GradientType=0 );
+  /* IE6-9 */ }
 
 .btn-modal-confirm {
   font-family: 'Lato', sans-serif;
